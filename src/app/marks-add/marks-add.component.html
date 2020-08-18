@@ -1,0 +1,11 @@
+<h2>Add Grades for Students</h2>
+Student ID : <input type="number" [(ngModel)] = "studentId">
+<br>
+Course ID : <input type="number" [(ngModel)] = "courseId">
+<br>
+Semester : <input type="number" [(ngModel)] = "semester">
+<br>
+Grade : <input type="number" [(ngModel)] = "score">
+<br>
+<button (click) = saveMarks()>Add Marks</button>
+{{statusMessage}}

@@ -1,0 +1,11 @@
+<h2>Add Courses</h2>
+<br>
+Subject Name : <input type="text" [(ngModel)] = "subjectName">
+<br>
+Teacher : <input type="text" [(ngModel)] = "teacherName">
+<br>
+GPA Level : <input type="number" [(ngModel)] = "gpaLevel">
+<br>
+<button (click)= "saveCourse()">Save Course</button>
+<br>
+{{statusMessage}}

@@ -1,0 +1,19 @@
+<h2>Calculate Ranks</h2>
+<br>
+Number of Students You Want Ranked : <input type="number" [(ngModel)] = "numRank">
+<br>
+<button (click) = "generateRanks()">Generate</button>
+<br>
+<table *ngIf = "listStudents.length > 0" border =1>
+    <tr>
+        <th width = 5% >Rank</th>
+        <th width = 18% >Name</th>
+        <th width = 18% >GPA</th>
+        <!-- <th width = 23%>Action</th> -->
+    </tr>
+    <tr *ngFor="let student of listStudents ; index as i" >
+        <td> {{i+1}} </td>
+        <td>{{student.studentName}} </td>
+        <td>{{student.gpa}}</td>
+    </tr>
+    </table>

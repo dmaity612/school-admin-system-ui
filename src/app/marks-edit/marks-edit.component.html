@@ -1,0 +1,13 @@
+<h2>Edit Grades for Students</h2>
+Record ID : <input type="number" [(ngModel)] = "recordId">
+<br>
+Student ID : <input type="number" [(ngModel)] = "studentId">
+<br>
+Course ID : <input type="number" [(ngModel)] = "courseId">
+<br>
+Semester : <input type="number" [(ngModel)] = "semester">
+<br>
+Grade : <input type="number" [(ngModel)] = "score">
+<br>
+<button (click) = editMarks()>Update</button>
+{{statusMessage}}

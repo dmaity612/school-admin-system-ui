@@ -1,0 +1,11 @@
+<h2>Add Student</h2>
+<br>
+Student Name : <input type="text" [(ngModel)] = "name">
+<br>
+Student Address : <input type="text" [(ngModel)] = "address">
+<br>
+Student Grade : <input type="number" [(ngModel)] = "grade">
+<br>
+<button (click) = "saveStudent()">Save Student</button>
+<br>
+{{statusMessage}}

@@ -1,0 +1,12 @@
+<h2>Edit Your Courses</h2>
+Course Id : <input type="text" [(ngModel)] = "courseID">
+<br>
+Subject Name : <input type="text" [(ngModel)] = "subjectName">
+<br>
+Teacher : <input type="text" [(ngModel)] = "teacherName">
+<br>
+GPA Level : <input type="number" [(ngModel)] = "gpaLevel">
+<br>
+<button (click)= "editCourse()">Update</button>
+<br>
+{{statusMessage}}
